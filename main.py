@@ -59,13 +59,14 @@ def trush_day(day_of_the_week, week):
 
 
 n = datetime.date.today()
-# カレンダー表示
-print(calendar.month(n.year, n.month))
+
 
 # テストデータの作成
 str_day = "2021-11-26"
 test_date = datetime.datetime.strptime(str_day, "%Y-%m-%d").date()
 
+# カレンダー表示
+print(calendar.month(test_date.year, test_date.month))
 print(get_day_of_the_week(test_date.weekday()))
 print(get_week(test_date.day))
 
